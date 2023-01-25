@@ -1,9 +1,9 @@
 https://node-js-jeffery-mid-jefferykung.vercel.app/
 
-#1. Project's Title
+# 1. Project's Title
 Jeffery's mid-term project for NodeJS
 
-#2. Project Description
+# 2. Project Description
 <!-- briefing from teacher https://docs.google.com/document/d/1xil0eM4Yogxj1Zd6VyTyygJbSaqZwjju5XvZkfyIRX8/edit -->
 It's a CRUD application for a easy table thread/blog. 
 
@@ -12,7 +12,7 @@ It's a CRUD application for a easy table thread/blog.
 * MySQL (database)--- host on railway app:  
 
 
-#3. How to Install and Run the Project
+# 3. How to Install and Run the Project
 
 npm i
 // to install dependencies 
@@ -20,7 +20,7 @@ npm i
 npm run dev
 // run with nodemon
 
-#4. How to Use the Project
+# 4. How to Use the Project
 
 (1.)login page with user authentication. I connect it to a MySQL database and store all the credencials. 
 If you successfully log in, you'll be redirect to the article page. If you don't, a JSON message will show you 'no match'
@@ -34,7 +34,7 @@ If you successfully log in, you'll be redirect to the article page. If you don't
 
 
 
-#5. Include Credits
+# 5. Include Credits
 
 My teacher Francois's styling and table structure.  
 
