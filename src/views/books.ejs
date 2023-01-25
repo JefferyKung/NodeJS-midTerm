@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Jeffery's Blog</title>
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.1.1/dist/css/bootstrap.min.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">Log out</a>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/books/all">Articles</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+
+<h1>Jeffery's thread blog (<%= model.length %>)</h1>
+
+<div class="table-responsive-sm">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Date</th>
+        <th>Comments</th>
+        <th>Likes</th>
+        <th class="d-print-none">
+          <a class="btn btn-sm btn-success" href="/books/create">Add</a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (const book of model) { %>
+        <tr>
+          <td><%= book.Title %></td>
+          <td><%= book.Author %></td>
+          <td><%= book.Date %></td>
+          <td><%= book.Comments %></td>
+          <td><%= book.Likes %></td>
+          <td></td>
+          <td class="d-print-none">
+            <a class="btn btn-sm btn-warning" href="/books/edit/<%= book.Book_ID %>">Edit</a>
+            <form action="/books/delete/<%= book.Book_ID %>?_method=DELETE" method="post" style="display: inline-block;">
+              <input type="submit" value="Delete" class="btn btn-sm btn-danger" />
+            </form>
+            <!-- 按讚功能試做 -->
+            <form action="/books/editlikes/<%= book.Book_ID %>?_method=POST" method="post" style="display: inline-block;">
+              <input type="submit" value="+" class="btn btn-sm btn-info" />
+            </form>
+            <!-- <a class="btn btn-sm btn-info" href="/books/editlikes/<%= book.Book_ID %>">+</a> -->
+
+          </td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+</div>
+
+<%- include("_footer") -%>
