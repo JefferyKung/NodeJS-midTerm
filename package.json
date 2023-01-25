@@ -1,11 +1,11 @@
 {
-  "name": "sqlite-nodejs",
+  "name": "jeffery-midterm-nodejs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/",
-    "dev": "nodemon src/"
+    "start": "node src/index",
+    "dev": "nodemon src/index"
   },
   "keywords": [],
   "author": "",

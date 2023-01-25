@@ -1,6 +1,5 @@
 {
     "version": 2,
-    "name": "Jeffery's blog",
     "builds": [
        { "src": "./src/index.js", "use": "@vercel/node" }
     ],
