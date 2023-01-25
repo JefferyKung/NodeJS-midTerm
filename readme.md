@@ -7,10 +7,9 @@ Jeffery's mid-term project for NodeJS
 <!-- briefing from teacher https://docs.google.com/document/d/1xil0eM4Yogxj1Zd6VyTyygJbSaqZwjju5XvZkfyIRX8/edit -->
 It's a CRUD application for a easy table thread/blog. 
 
-*
-Node.js in MVC structure(backend),   
-EJS, CSS and JavaScript (frontend),   
-MySQL (database)--- host on railway app:  
+* Node.js in MVC structure(backend),   
+* EJS, CSS and JavaScript (frontend),   
+* MySQL (database)--- host on railway app:  
 
 
 3. How to Install and Run the Project
